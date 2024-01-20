@@ -11,6 +11,6 @@ mod constants {
     const BAR: usize = 2;
 }
 
-println!("{}", constants::to_str(2));  // "foo means something"
-println!("{}", constants::to_str!(1)); // "some meaning to foo"
+println!("{}", constants::to_str(2));  // "bar means something else"
+println!("{}", constants::to_str!(FOO)); // "foo means something"
 ```
