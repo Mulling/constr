@@ -1,5 +1,8 @@
 # constr
 
+Automatic constant to string.
+
+### Example:
 ```rust
 #[constr(some_function(u8) -> Option)]
 mod constants {
@@ -12,9 +15,11 @@ mod constants {
 println!("{}", constants::to_str(2).unwrap());  // prints "bar means something else"
 println!("{}", constants::to_str(3).unwrap());  // panics
 println!("{}", constants::to_str(1).unwrap());  // prints "foo means something"
+```
 
 expands to:
 
+```rust
 #[constr(some_function(u8) -> Option)]
 mod constants {
     const FOO: u8 = 1;
