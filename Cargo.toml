@@ -12,3 +12,7 @@ lto = true
 codegen-units = 1
 panic = 'abort'
 strip = true
+
+[dependencies]
+proc-macro2 = "1.0.78" # So good they needed a second one
+syn = "2.0.48"
